@@ -20,9 +20,9 @@ jobs:
       - name: Construção e Envio da Imagem  Docker 
         uses: docker/build-push-action@v6
         with:
-          context: JovemN00bl/fake-shop/src
+          context: ./src
           push: true
-          file: JovemN00bl/fake-shop/src/Dockerfile
+          file: ./src/Dockerfile
           tags: |
             n00bl/fake-shop:latest
             n00bl/fake-shop:v${{ github.run_number }}
