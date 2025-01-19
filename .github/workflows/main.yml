@@ -52,7 +52,7 @@ jobs:
       - uses: Aplicar os manifestos no kubernetes
         with:
           manifests: |
-              src/k8s/deploymnet.yaml
+              ./k8s/deploymnet.yaml
           images: |
                n00bl/fake-shop:v${{ github.run_number }}
         
